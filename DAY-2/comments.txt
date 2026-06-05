@@ -1,0 +1,4 @@
+On the first Run of lighthouse on article.html,accessability was 95% .
+Issue : code doesn't contain a main landmark
+Fixed the issue by adding main tag and then got 100% accessability
+On running axe DevTools , total issues identified is 0
