@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+  </head>
+  <body>
+    <main>
+    <h1>Registeration Form:</h1>
+    <form>
+      <fieldset>
+        <legend>Personal Details:</legend>
+
+        <label for="text">Enter Name:</label>
+        <input type="text" id="text" />
+        <br />
+        <br>
+        <label for="email">Enter Email:</label>
+        <input type="email" id="email" />
+        <br />
+        <br>
+        <label for="phone">Enter Telephone:</label>
+        <input type="tel" id="phone" />
+        <br>
+        <br>
+      </fieldset>
+      <fieldset>
+        <legend>Account</legend>
+        <label for="user">Enter username:</label>
+        <input type="text" id="user" pattern="[A-Za-z]{8}" />
+        <label for="password">Enter Password:</label>
+        <input type="password" id="password" minlength="6" maxlength="16" />
+        <label for="confirm">Confirm Password:</label>
+        <input type="password" id="confirm" />
+        <br />
+        <br>
+      </fieldset>
+      <fieldset>
+        <legend>Preferences</legend>
+        <fieldset>
+          <legend>Notifications:</legend>
+          <input type="radio" id="yes" name="Notification" />
+          <label for="yes">All notification</label>
+          <input type="radio" id="only" name="Notification" />
+          <label for="only">Receive Important notification</label>
+          <input type="radio" id="no" name="Notification" />
+          <label for="no">Turn of all notifications</label>
+        </fieldset>
+        <br />
+        <br>
+        <label for="skill">Enter skill level:</label>
+        <input type="range" id="skill" min="0" max="10" />
+        <br />
+        <br />
+        <label for="favourite">Pick a color for profile::</label>
+        <input type="color" id="favourite" value="#ff0000" />
+        <br />
+        <br>
+      </fieldset>
+      <br>
+      <br>
+      <fieldset>
+        <legend>Others</legend>
+      <label for="job">Select a Job Title:</label>
+      <input list="jobs" id="job" />
+      <datalist id="jobs">
+        <option value="Software Engineer"></option>
+        <option value="AI Devoloper"></option>
+        <option value="Cloud Devoloper"></option>
+        <option value="AI Engineer"></option>
+        <option value="Data Scientist"></option>
+        <option value="Data Analyst"></option>
+        <option value="Bank clerk"></option>
+        <option value="Finance Manager"></option>
+      </datalist>
+      <br />
+      <br>
+      <label for="dob">Enter DOB:</label>
+      <input type="date" id="dob" />
+      <br />
+      <br>
+      
+      <label for="curtime">Enter Current Time:</label>
+      <input type="time" id="curtime" />
+      <br />
+      <br>
+      <label for="datetime">Enter confirmation date and time:</label>
+      <input type="datetime-local" id="datetime" />
+      <br />
+      <br>
+      <label for="curmonth">Enter lisence expiry month:</label>
+      <input type="month" id="curmonth" />
+      <br />
+      <br>
+      <label for="vehiclenumber">Enter number of vehicles:</label>
+      <input type="number" id="vehiclenumber" />
+      <br />
+      <br>
+      
+
+      <label for="curweek">Enter Lisence expiry Week:</label>
+      <input type="week" id="curweek" />
+      <br />
+      <br>
+
+      <label for="webpage">Enter your Github URL:</label>
+      <input type="url" id="webpage" />
+
+      <br />
+      <br>
+      <label>Enter the available documents:</label>
+      <input type="checkbox" id="adhar" />
+      <label for="adhar">adhar</label>
+      <input type="checkbox" id="pan" />
+      <label for="pan">pan</label>
+      <input type="checkbox" id="lisence" />
+      <label for="lisence">lisence</label>
+      <br />
+      <br>
+      </fieldset>
+
+      <br />
+      <br>
+      <label for="myfile">Upload your CV:</label>
+      <input type="file" id="myfile" />
+      <br>
+    </form>
+    </main>
+  </body>
+</html>
