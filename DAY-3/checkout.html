@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+</head>
+<body>
+    <main>
+        <form>
+        <fieldset>
+            <legend>Fields marked * are required</legend>
+        <fieldset>
+            <legend>Delivery Address:</legend>
+            <label for="name">Full Name:*</label>
+            <input type="text" id="name" required>
+            <br>
+            <br>
+            <label for="address1">Address Line 1:*</label>
+            <input type="text" id="address1" required>
+            <br>
+            <br>
+            <label for="address2">Address Line 2:</label>
+            <input type="text" id="address2">
+            <br>
+            <br>
+            <label for="city">City:*</label>
+            <input type="text" id="city" required>
+            <br>
+            <br>
+            <label for="postcode">Post Code*:</label>
+            <input type="number" id="postcode" required>
+            <br>
+            <br>
+            <label for="country">Select Country:</label>
+            <select name="countries" id="country">
+                <option value="India">India</option>
+                <option value="Russia">Russia</option>
+                <option value="Brazil">Brazil</option>
+                <option value="India">India</option>
+                <option value="Canada">Canada</option>
+                <option value="China">China</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Kenya">Kenya</option>
+                <option value="France">France</option>
+                <option value="Finland">Finland</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Greece">Greece</option>
+                <option value="England">England</option>
+                <option value="Austria">Australia</option>
+                <option value="Scotland">Scotland</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Italy">Italy</option>
+            </select>
+            <br>
+            <br>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Payment Details</legend>
+            <label for="card">Card Number:*</label>
+            <input type="text" id="card" maxlength="16" required>
+            <br>
+            <br>
+            <label for="expiry">Enter Expiry Month and Year:*</label>
+            <input type="date" id="expiry" required>
+            <br>
+            <br>
+            <label for="cvv">Enter CVV:*</label>
+            <input type="password" id="cvv" maxlength="4" aria-describedby="card1" required>
+            <p id="card1">3 or 4 of your back of your card</p>
+            <br>
+            <br>
+            <label for="order">Enter order notes:*</label>
+            <textarea id="order" maxlength="500"
+                placeholder="optional">
+            </textarea>
+            <br>
+            <br>
+        </fieldset>
+        </fieldset>
+        <input type="submit">
+        </form>
+    </main>
+</body>
+</html>
