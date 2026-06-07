@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <main>
+      <h1>Login Form</h1>
+      <form>
+        <label for="email" required
+          >Email:*
+          <input type="email" id="email" autocomplete="email" />
+        </label>
+        <br />
+        <br />
+        <label for="password" required
+          >Password:*
+          <input
+            type="password"
+            id="password"
+            autocomplete="current-password"
+            aria-describedby="#hint"
+          />
+        </label>
+        <button type="button" aria-pressed="false">Show/Hide</button>
+        <p id="hint">Must be atleast 8 characters</p>
+        <br />
+        <label for="checkbox"
+          >Remember Me:
+          <input
+            type="checkbox"
+            id="checkbox"
+            name="checkbox"
+            value="checkbox"
+          />
+        </label>
+        <br />
+        <br />
+        <button type="button">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
