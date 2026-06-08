@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+  </head>
+  <body>
+    <main>
+    <h1>Registeration Form:</h1>
+    <form>
+      <fieldset>
+        <legend>Personal Details:</legend>
+
+        <label for="name">Enter Name:*</label>
+        <input type="text" id="name" required />
+        <br />
+        <br>
+        <label for="emailId">Enter Email:*</label>
+        <input type="email" id="emailId" required/>
+        <br />
+        <br>
+        <label for="phone">Enter Telephone:*</label>
+        <input type="tel" id="phone" required/>
+        <br>
+        <br>
+      </fieldset>
+      <fieldset>
+        <legend>Account</legend>
+        <label for="userName">Enter username:*</label>
+        <input type="text" id="userName" pattern="[A-Za-z]{8}" required />
+        <br>
+        <br>
+        <label for="password">Enter Password:*</label>
+        <input type="password" id="password" minlength="6" maxlength="16" required />
+        <br>
+        <br>
+        <label for="confirmPasswod">Confirm Password:*</label>
+        <input type="password" id="confirmPassword" required />
+        <br />
+        <br>
+      </fieldset>
+      <fieldset>
+        <legend>Preferences</legend>
+        <fieldset>
+          <legend>Notifications:</legend>
+           <label for="yes">All notification</label>
+          <input type="radio" id="yes" name="Notification" />
+         <label for="only">Receive Important notification</label>
+          <input type="radio" id="only" name="Notification" />
+          <label for="no">Turn of all notifications</label>
+          <input type="radio" id="no" name="Notification" />
+          
+        </fieldset>
+        <br />
+        <br>
+        <label for="skillLevel">Enter skill level:*</label>
+        <input type="range" id="skillLevel" min="0" max="10" required />
+        <br />
+        <br />
+        <label for="favouriteColor">Pick a color for profile::</label>
+        <input type="color" id="favouriteColor" value="#ff0000" />
+        <br />
+        <br>
+      </fieldset>
+      <br>
+      <br>
+      <fieldset>
+        <legend>Others</legend>
+      <label for="job">Select a Job Title:*</label>
+      <input list="jobs" id="job" required/>
+      <datalist id="jobs">
+        <option value="Software Engineer"></option>
+        <option value="AI Devoloper"></option>
+        <option value="Cloud Devoloper"></option>
+        <option value="AI Engineer"></option>
+        <option value="Data Scientist"></option>
+        <option value="Data Analyst"></option>
+        <option value="Bank clerk"></option>
+        <option value="Finance Manager"></option>
+      </datalist>
+      <br />
+      <br>
+      <label for="dob">Enter DOB:*</label>
+      <input type="date" id="dob" required />
+      <br />
+      <br>
+      
+      <label for="currentTime">Enter Current Time:</label>
+      <input type="time" id="currentTime" />
+      <br />
+      <br>
+      <label for="dateAndTime">Enter confirmation date and time:</label>
+      <input type="datetime-local" id="dateAndTime" />
+      <br />
+      <br>
+      <label for="expiryMonth">Enter lisence expiry month:*</label>
+      <input type="month" id="expiryMonth" required />
+      <br />
+      <br>
+      <label for="vehicleNumber">Enter number of vehicles:</label>
+      <input type="number" id="vehicleNumber" />
+      <br />
+      <br>
+      
+
+      <label for="currentWeek">Enter Lisence expiry Week:</label>
+      <input type="week" id="currentWeek" />
+      <br />
+      <br>
+
+      <label for="webPageUrl">Enter your Github URL:*</label>
+      <input type="url" id="webPageUrl" required/>
+
+      <br />
+      <br>
+      <label>Enter the available documents:</label>
+      <input type="checkbox" id="adharCard" />
+      <label for="adharCard">adhar</label>
+      <input type="checkbox" id="panCard" />
+      <label for="panCard">pan</label>
+      <input type="checkbox" id="lisence" />
+      <label for="lisence">lisence</label>
+      <br />
+      <br>
+      </fieldset>
+
+      <br />
+      <br>
+      <label for="myFile">Upload your CV:*</label>
+      <input type="file" id="myFile" required/>
+      <br>
+      <br>
+      <input type="submit">
+    </form>
+    </main>
+  </body>
+</html>
