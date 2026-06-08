@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+  </head>
+  <body>
+    <main>
+      <img
+        srcset="
+          https://picsum.photos/id/231/400   400w,
+          https://picsum.photos/id/231/800   800w,
+          https://picsum.photos/id/231/1200 1200w
+        "
+        sizes="(max-width: 600px) 100vw,(max-width: 1200px) 50vw,33vw"
+        loading="eager"
+        alt="random image 1"
+      />
+      <img
+        srcset="
+          https://picsum.photos/id/232/400   400w,
+          https://picsum.photos/id/232/800   800w,
+          https://picsum.photos/id/232/1200 1200w
+        "
+        sizes="(max-width: 600px) 100vw,(max-width: 1200px) 50vw,33vw"
+        loading="lazy"
+        alt="random imange 2"
+      />
+      <img
+        srcset="
+          https://picsum.photos/id/233/400   400w,
+          https://picsum.photos/id/233/800   800w,
+          https://picsum.photos/id/233/1200 1200w
+        "
+        sizes="(max-width: 600px) 100vw,(max-width: 1200px) 50vw,33vw"
+        loading="lazy"
+        alt="random image 3"
+      />
+      <img
+        srcset="
+          https://picsum.photos/id/234/400   400w,
+          https://picsum.photos/id/234/800   800w,
+          https://picsum.photos/id/234/1200 1200w
+        "
+        sizes="(max-width: 600px) 100vw,(max-width: 1200px) 50vw,33vw"
+        loading="lazy"
+        alt="ransom image 4"
+      />
+      <img
+        srcset="
+          https://picsum.photos/id/235/400   400w,
+          https://picsum.photos/id/235/800   800w,
+          https://picsum.photos/id/235/1200 1200w
+        "
+        sizes="(max-width: 600px) 100vw,(max-width: 1200px) 50vw,33vw"
+        loading="lazy"
+        alt="random image 5"
+      />
+      <img
+        srcset="
+          https://picsum.photos/id/236/400   400w,
+          https://picsum.photos/id/236/800   800w,
+          https://picsum.photos/id/236/1200 1200w
+        "
+        sizes="(max-width: 600px) 100vw,(max-width: 1200px) 50vw,33vw"
+        loading="lazy"
+        alt="random image 6"
+      />
+      <img
+        srcset="
+          https://picsum.photos/id/237/400   400w,
+          https://picsum.photos/id/237/800   800w,
+          https://picsum.photos/id/237/1200 1200w
+        "
+        sizes="(max-width: 600px) 100vw,(max-width: 1200px) 50vw,33vw"
+        alt="random image 7"
+      />
+      <img
+        srcset="
+          https://picsum.photos/id/238/400   400w,
+          https://picsum.photos/id/238/800   800w,
+          https://picsum.photos/id/238/1200 1200w
+        "
+        sizes="(max-width: 600px) 100vw,(max-width: 1200px) 50vw,33vw"
+        alt="random image 8"
+      />
+      <picture>
+        <source media="(width<800 px)" srcset="https://picsum.photos/id/18/200/300" />
+        <source media="(width>=800 px)" srcset="https://picsum.photos/id/18/400/1200" />
+        <img src="https://picsum.photos/id/17/200/300" alt="A Garden" />
+      </picture>
+    </main>
+  </body>
+</html>
