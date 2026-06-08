@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media</title>
+  </head>
+  <body>
+    <main>
+      <video
+        src="https://www.w3schools.com/html/mov_bbb.mp4"
+        width="640"
+        poster="https://picsum.photos/id/11/640/340"
+        controls
+      >
+        <track src="simple.vtt" kind="captions" srclang="en" label="English" />
+        <p>Your Broweser Does not Support HTML Videos</p>
+      </video>
+      <details>
+        <summary>details about the video</summary>
+        There are 2 animals playing in this animated video
+      </details>
+      <br />
+      <br />
+      <audio controls>
+        <source
+          src="https://actions.google.com/sounds/v1/alarms/digital_watch_alarm_long.ogg"
+          type="audio/ogg"
+        />
+        <source
+          src="https://actions.google.com/sounds/v1/alarms/digital_watch_alarm_long.ogg"
+          type="audio/mp3"
+        />
+        <p>
+          Your Browser does not support the audio element visit here :
+          <a
+            href="https://actions.google.com/sounds/v1/alarms/digital_watch_alarm_long.ogg"
+            download
+            >Download mp3</a
+          >
+        </p>
+      </audio>
+      <details>
+        <summary>details about the audio</summary>
+        The audio is used to demonstrate HTML audio element
+      </details>
+    </main>
+  </body>
+</html>
