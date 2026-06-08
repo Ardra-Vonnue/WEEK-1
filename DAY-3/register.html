@@ -12,12 +12,12 @@
       <fieldset>
         <legend>Personal Details:</legend>
 
-        <label for="text">Enter Name:*</label>
-        <input type="text" id="text" required />
+        <label for="name">Enter Name:*</label>
+        <input type="text" id="name" required />
         <br />
         <br>
-        <label for="email">Enter Email:*</label>
-        <input type="email" id="email" required/>
+        <label for="emailId">Enter Email:*</label>
+        <input type="email" id="emailId" required/>
         <br />
         <br>
         <label for="phone">Enter Telephone:*</label>
@@ -27,16 +27,16 @@
       </fieldset>
       <fieldset>
         <legend>Account</legend>
-        <label for="user">Enter username:*</label>
-        <input type="text" id="user" pattern="[A-Za-z]{8}" required />
+        <label for="userName">Enter username:*</label>
+        <input type="text" id="userName" pattern="[A-Za-z]{8}" required />
         <br>
         <br>
         <label for="password">Enter Password:*</label>
         <input type="password" id="password" minlength="6" maxlength="16" required />
         <br>
         <br>
-        <label for="confirm">Confirm Password:*</label>
-        <input type="password" id="confirm" required />
+        <label for="confirmPasswod">Confirm Password:*</label>
+        <input type="password" id="confirmPassword" required />
         <br />
         <br>
       </fieldset>
@@ -44,21 +44,22 @@
         <legend>Preferences</legend>
         <fieldset>
           <legend>Notifications:</legend>
+           <label for="yes">All notification</label>
           <input type="radio" id="yes" name="Notification" />
-          <label for="yes">All notification</label>
+         <label for="only">Receive Important notification</label>
           <input type="radio" id="only" name="Notification" />
-          <label for="only">Receive Important notification</label>
-          <input type="radio" id="no" name="Notification" />
           <label for="no">Turn of all notifications</label>
+          <input type="radio" id="no" name="Notification" />
+          
         </fieldset>
         <br />
         <br>
-        <label for="skill">Enter skill level:*</label>
-        <input type="range" id="skill" min="0" max="10" required />
+        <label for="skillLevel">Enter skill level:*</label>
+        <input type="range" id="skillLevel" min="0" max="10" required />
         <br />
         <br />
-        <label for="favourite">Pick a color for profile::</label>
-        <input type="color" id="favourite" value="#ff0000" />
+        <label for="favouriteColor">Pick a color for profile::</label>
+        <input type="color" id="favouriteColor" value="#ff0000" />
         <br />
         <br>
       </fieldset>
@@ -85,39 +86,39 @@
       <br />
       <br>
       
-      <label for="curtime">Enter Current Time:</label>
-      <input type="time" id="curtime" />
+      <label for="currentTime">Enter Current Time:</label>
+      <input type="time" id="currentTime" />
       <br />
       <br>
-      <label for="datetime">Enter confirmation date and time:</label>
-      <input type="datetime-local" id="datetime" />
+      <label for="dateAndTime">Enter confirmation date and time:</label>
+      <input type="datetime-local" id="dateAndTime" />
       <br />
       <br>
-      <label for="curmonth">Enter lisence expiry month:*</label>
-      <input type="month" id="curmonth" required />
+      <label for="expiryMonth">Enter lisence expiry month:*</label>
+      <input type="month" id="expiryMonth" required />
       <br />
       <br>
-      <label for="vehiclenumber">Enter number of vehicles:</label>
-      <input type="number" id="vehiclenumber" />
+      <label for="vehicleNumber">Enter number of vehicles:</label>
+      <input type="number" id="vehicleNumber" />
       <br />
       <br>
       
 
-      <label for="curweek">Enter Lisence expiry Week:</label>
-      <input type="week" id="curweek" />
+      <label for="currentWeek">Enter Lisence expiry Week:</label>
+      <input type="week" id="currentWeek" />
       <br />
       <br>
 
-      <label for="webpage">Enter your Github URL:*</label>
-      <input type="url" id="webpage" required/>
+      <label for="webPageUrl">Enter your Github URL:*</label>
+      <input type="url" id="webPageUrl" required/>
 
       <br />
       <br>
       <label>Enter the available documents:</label>
-      <input type="checkbox" id="adhar" />
-      <label for="adhar">adhar</label>
-      <input type="checkbox" id="pan" />
-      <label for="pan">pan</label>
+      <input type="checkbox" id="adharCard" />
+      <label for="adharCard">adhar</label>
+      <input type="checkbox" id="panCard" />
+      <label for="panCard">pan</label>
       <input type="checkbox" id="lisence" />
       <label for="lisence">lisence</label>
       <br />
@@ -126,8 +127,8 @@
 
       <br />
       <br>
-      <label for="myfile">Upload your CV:*</label>
-      <input type="file" id="myfile" required/>
+      <label for="myFile">Upload your CV:*</label>
+      <input type="file" id="myFile" required/>
       <br>
       <br>
       <input type="submit">
