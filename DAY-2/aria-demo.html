@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aria-demo</title>
+    <style>
+      .skip-link {
+        opacity: 0;
+      }
+      .skip-link:focus {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <main id="main-content">
+      <br />
+      <br />
+      <div role="search">
+        <label for="gsearch">
+          Google Search : <input type="search" id="gsearch" name="gsearch"
+        /></label>
+      </div>
+      <br />
+      <button aria-label="Close Menu">X</button>
+      <button aria-expanded="false" aria-controls="menu-id">Toggle</button>
+      <br />
+      <div role="alert" aria-live="polite">Notification Div</div>
+      <br />
+      <br />
+      <form>
+        <label for="fname"
+          >Name:
+          <input
+            type="text"
+            id="name"
+            name="name"
+            aria-required="true"
+            aria-describedby="fname"
+          />
+        </label>
+        <p id="fname">Only provide first name without space</p>
+        <label for="address"
+          >Address:
+          <input
+            type="text"
+            id="address"
+            name="address"
+            aria-required="true"
+            aria-describedby="address"
+          />
+        </label>
+        <p id="address">Only provide your Home address</p>
+        <label for="address"
+          >Email:
+          <input
+            type="email"
+            id="email"
+            name="email"
+            aria-required="true"
+            aria-describedby="mail"
+          />
+        </label>
+        <p>Provide your personal Email</p>
+      </form>
+    </main>
+  </body>
+</html>
